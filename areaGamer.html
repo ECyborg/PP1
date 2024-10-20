@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Gamer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 5px 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+        }
+
+        #container {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+        }
+
+        .section {
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #MaisVendidos {
+            background-color: #a29e9e;
+            min-height: 60vh;
+        }
+
+        #SecaoGamer {
+            width: 100%;
+            padding: 20px;
+            margin: 0;
+            max-height: 50vh;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 80px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            background-color: rgb(180, 180, 180);
+        }
+
+        .product-card img {
+            max-width: 190px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .product-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #ff6600;
+            font-size: 16px;
+        }
+
+        .menu-btn {
+            top: 20px;
+            left: 0;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+            font-size: 20px;
+        }
+
+        .caixa {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 32px;
+            margin-top: 19px;
+            color: black
+        }
+
+        .h1-caixa {
+            margin-left: -20px;
+            text-align: center;
+            margin-top: 30px;
+            color: black;
+        }
+
+        .logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <img class="logo" src="logo-_1_.ico" alt="">
+            <h1 class="h1-caixa">CraftPlay</h1>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="login.html">Login</a></li>
+                <li><a href="principal.html">Página Principal</a></li>
+                <li><a href="gamer.html">Área Gamer</a></li>
+                <li><a href="areaGeek.html">Área Geek</a></li>
+                <li><a href="carrinho.html">Carrinho 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section id="MaisVendidos" class="section">
+            <h1 style="text-align: center;">Mais Vendidos</h1>
+            <p>Todos os produtos</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img style="max-width: 100%;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabZMZSio9ACTb3uALwSuvMq5h9yLHWr9zaA&s"
+                        alt="Imagem">
+                    <h2>Call of Duty®: Black Ops 6</h2>
+                    <p>R$ 150,00</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;"
+                        src="https://cdn.sortiraparis.com/images/80/66131/1104437-silent-hill-2-nouvelle-bande-annonce-pour-le-remake-du-jeu-de-konami.jpg"
+                        alt="Imagem">
+                    <h2>Silent Hill 2</h2>
+                    <p>R$ 230,00</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;"
+                        src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg?t=1728067832"
+                        alt="Imagem">
+                    <h2>God of War Ragnarök</h2>
+                    <p>R$ 178,90</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="SecaoGamer" class="section">
+            <h1>Seção Gamer</h1>
+            <p>Produtos para quem ama jogos, explore os últimos lançamentos!</p>
+            <br>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://s2-techtudo.glbimg.com/Dx-d7zd6abaVIdY1QqGVKl_QvJ4=/0x0:620x349/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/s/i/R6L1HDR3GxheHSo2ECLQ/2013-10-11-grand-theft-auto-5-gta-finais.jpg"
+                        alt="Imagem">
+                    <h2>Grand Theft Auto V</h2>
+                    <p>R$ 82,41</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1726158438"
+                        alt="Imagem">
+                    <h2>Sekiro™: Shadows Die Twice - GOTY Edition</h2>
+                    <p>R$ 100,00</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1711128146"
+                        alt="Imagem">
+                    <h2>Stardew Valley</h2>
+                    <p>R$ 12,49</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/750920/header.jpg?t=1709834464"
+                        alt="Imagem">
+                    <h2>Shadow of the Tomb Raider: Definitive Edition</h2>
+                    <p>R$ 49,97</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238320/header.jpg?t=1666817106"
+                        alt="Imagem">
+                    <h2>Outlast</h2>
+                    <p>R$ 59,99</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/header.jpg?t=1728557065"
+                        alt="Imagem">
+                    <h2>Alien: Isolation</h2>
+                    <p>R$ 179,99</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1728603021"
+                        alt="Imagem">
+                    <h2>The Last of Us™ Part I</h2>
+                    <p>R$ 249,90</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1728439147"
+                        alt="Imagem">
+                    <h2>Resident Evil 4</h2>
+                    <p>R$ 169,00</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+                <div class="product-card">
+                    <img style="max-width: 100%;" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962663/header.jpg?t=1726766667"
+                        alt="Imagem">
+                    <h2>Call of Duty®: Warzone™</h2>
+                    <p>Gratuito</p>
+                    <button><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: black;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 5px 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.caixa {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 19px;
+  color: black
+}
+
+.h1-caixa {
+  margin-left: -20px;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: #00FF00; 
+}

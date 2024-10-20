@@ -1,0 +1,98 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  black;
+    color: wheat;
+}
+
+.container {
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #00FF00;
+    position: relative;
+    animation: percorrerBorda 2s infinite linear;
+}
+
+input {
+	border-radius: 5px;
+    margin-top: 6px; 
+    padding: 3px;
+}
+
+input:focus {
+    outline: 1px solid #00FF00;
+}
+
+form {
+    align-items: flex-start;
+    flex-direction: column;
+    align-self: center;
+}
+
+h1{
+    margin-left: 1.2em;
+    align-self: flex-start;
+    text-align: start; 
+}
+
+@keyframes percorrerBorda {
+    0% {
+        border-top: 2px solid #00FF00;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    25% {
+        border-top: 2px solid #00FF00;
+        border-right: 2px solid #00FF00;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    50% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid #00FF00;
+        border-bottom: 2px solid #00FF00;
+        border-left: 2px solid transparent;
+    }
+
+    75% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid #00FF00;
+        border-left: 2px solid #00FF00;
+    }
+
+    100% {
+        border-top: 2px solid #00FF00;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+}
+
+button {
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: border 0.4s ease;
+    color: white;
+    background-color: transparent;
+}
+
+button:hover {
+    border-color: #00FF00;
+    background-color: transparent;
+    color: #00FF00;
+    transition: color 0.4s ease;
+}
